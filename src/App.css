@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-karla {
+    @apply font-sans;
+    font-family: 'Karla', sans-serif;
+  }
+  
+
+  h1 {
+    @apply font-karla font-bold text-2xl text-gurosGray;
+  }
+
+  h2 {
+    @apply font-karla font-bold text-xl text-gurosGray; 
+  }
+
+  h3{
+    @apply font-karla font-bold text-gurosGray text-sm;
+  }
+
+  p{
+    @apply font-karla text-base text-gurosLightGray; 
+  }
+
+  li{
+    @apply font-karla text-xs text-gurosBlue p-2 border-gurosBlue border rounded-2xl w-fit; 
+  }
+
+  .idMovie{
+    @apply font-karla text-sm;
+  }
+
+  body{
+    @apply px-10;
+  }
+
+  .shadowModal{
+    box-shadow: 0 0 0 50vmax rgba(39, 49, 56,.5);
+  }
+
+  .ratingM{
+    @apply font-karla font-bold text-2xl text-white;
+  }
+
+  .navigationEnabled{
+    @apply font-karla text-base text-gurosBlue py-2 px-6 border-gurosBlue border rounded-xl w-fit; 
+  }
+
+  .navigationDisabled{
+    @apply navigationEnabled opacity-75;
+  }
+
+}
+  
+body {
+  overflow-x: hidden;
+}
+
+.movie-image-container {
+  width: 20rem;
+  height: 300px;
+  overflow: hidden;
+  justify-content: space-between !important;
+}
+
+.movie-image {
+  object-fit: fill;
+width: 100%;
+height: 100%;
+  
+}
+
+.modalImagen{
+width:30vw;
+  height:75vh;
+}
